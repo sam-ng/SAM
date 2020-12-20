@@ -1,5 +1,10 @@
 import React from 'react';
+import NavBar from '../components/NavBar';
 
 export default function Home() {
-  return <div style={{ fontSize: '72px' }}>Hello world!</div>;
+  return (
+    <div>
+      <NavBar></NavBar>
+    </div>
+  );
 }
