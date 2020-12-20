@@ -1,6 +1,8 @@
 # SAM
 TODO:
-Logo
-Sections
-Header + NavBar
-Footer
+<ul>
+  <li>Logo</li>
+  <li>Sections</li>
+  <li>Header + NavBar</li>
+  <li>Footer</li>
+</ul>
