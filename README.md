@@ -1,2 +1,6 @@
 # SAM
-I'll figure it out later :)
+TODO:
+Logo
+Sections
+Header + NavBar
+Footer
