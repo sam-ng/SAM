@@ -1,23 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
+const Link = styled.a`
+  background: #2c3e50;
+  color: white;
+  padding: 4px;
+  display: inline;
 `;
 
-const Wrapper = styled.section`
-  padding: 4em;
-  background: papayawhip;
+const Wrapper = styled.div`
+  display: inline;
+  direction: rtl;
 `;
 
-export default function NavBarLink() {
+export default function NavBarLink(props) {
   return (
-    <div>
-      <Wrapper>
-        <Title>Hello World!</Title>
-      </Wrapper>
+    <div className={props.className}>
+      <Link>{props.name}</Link>
     </div>
   );
 }
