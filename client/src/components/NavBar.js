@@ -3,11 +3,16 @@ import styled from 'styled-components';
 import NavBarLink from './NavBarLink';
 
 const Wrapper = styled.div`
-  direction: rtl;
+  background: lightgrey;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 `;
 
 const StyledNavBarLink = styled(NavBarLink)`
-  display: inline;
+  align-items: stretch;
 `;
 
 export default function NavBar() {
