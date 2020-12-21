@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import NavBar from '../components/NavBar';
+import './index.css';
 
-const Wrapper = styled.div`
-  padding: 0px;
-`;
+const Wrapper = styled.div``;
 
 export default function Home() {
   return (

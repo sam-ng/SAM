@@ -5,6 +5,7 @@ import NavBarLink from './NavBarLink';
 const Wrapper = styled.div`
   background: lightgrey;
   height: 100px;
+  margin: 0px
   padding: 10px;
   display: flex;
   flex-direction: row;
