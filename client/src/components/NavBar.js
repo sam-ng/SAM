@@ -5,16 +5,15 @@ import NavBarLink from './NavBarLink';
 const Wrapper = styled.div`
   background: lightgrey;
   height: 100px;
-  margin: 0px
-  padding: 10px;
+  margin: 0px 0px 20px 0px;
+  padding: 10px 25px 10px 0px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
 `;
 
-const StyledNavBarLink = styled(NavBarLink)`
-  align-items: stretch;
-`;
+const StyledNavBarLink = styled(NavBarLink)``;
 
 export default function NavBar() {
   return (
