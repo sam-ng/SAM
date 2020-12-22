@@ -19,9 +19,9 @@ const StyledNavBarLink = styled(NavBarLink)``;
 export default function NavBar() {
   return (
     <Wrapper>
-      <StyledNavBarLink name="Home"></StyledNavBarLink>
-      <StyledNavBarLink name="Art"></StyledNavBarLink>
-      <StyledNavBarLink name="About Me"></StyledNavBarLink>
+      <StyledNavBarLink pageName="Home" href="/"></StyledNavBarLink>
+      <StyledNavBarLink pageName="Art" href="/art"></StyledNavBarLink>
+      <StyledNavBarLink pageName="About Me" href="/aboutme"></StyledNavBarLink>
     </Wrapper>
   );
 }
