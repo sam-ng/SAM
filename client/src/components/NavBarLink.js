@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const Link = styled.a`
   @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-  background: #2c3e50;
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 18pt;

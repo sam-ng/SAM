@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import NavBarLink from './NavBarLink';
+import backgroundImage from '../images/yourNameSky.jpg';
 
 const Wrapper = styled.div`
-  background: lightgrey;
+  background-image: url(${backgroundImage});
   height: 100px;
   margin: 0px 0px 20px 0px;
   padding: 10px 25px 10px 0px;
