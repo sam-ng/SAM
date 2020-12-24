@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import GridItem from './ProjectCard';
+import ProjectCard from './ProjectCard';
 
 const Wrapper = styled.div`
   margin: auto;
-  width: 50%;
+  margin-top: 50px;
+  width: 80%;
   display: grid;
   grid-template:
-    [row1-start] 'project project project' 100px [row1-end]
+    [row1-start] 'project project project' 200px [row1-end]
     / 1fr 1fr 1fr;
-  gap: 200px 200px;
+  gap: 50px 50px;
   justify-items: center;
   align-items: center;
 `;
@@ -17,9 +18,9 @@ const Wrapper = styled.div`
 export default function Grid() {
   return (
     <Wrapper>
-      <GridItem></GridItem>
-      <GridItem></GridItem>
-      <GridItem></GridItem>
+      <ProjectCard projectName="Stony Schedule Builder/Viewer"></ProjectCard>
+      <ProjectCard projectName='"What Makes People in a Country Happy?"'></ProjectCard>
+      <ProjectCard projectName="Dynamic Memory Allocator"></ProjectCard>
     </Wrapper>
   );
 }

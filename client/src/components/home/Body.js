@@ -10,15 +10,7 @@ const BodyTitle = styled.h1`
   text-align: center;
 `;
 
-const StyledGrid = styled(Grid)`
-  @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-  font-family: 'Raleway', sans-serif;
-  font-size: 24pt;
-  font-weight: 100;
-  text-align: center;
-
-  align-self: center;
-`;
+const StyledGrid = styled(Grid)``;
 
 export default function Body() {
   return (
