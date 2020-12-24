@@ -5,6 +5,7 @@ import backgroundImage from '../images/yourNameSky.jpg';
 
 const Wrapper = styled.div`
   background-image: url(${backgroundImage});
+  box-shadow: 0px 5px 8px #888888;
   height: 100px;
   margin: 0px 0px 20px 0px;
   padding: 10px 25px 10px 0px;
@@ -15,6 +16,7 @@ const Wrapper = styled.div`
 `;
 
 const NavTitle = styled.p`
+  @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 36pt;
