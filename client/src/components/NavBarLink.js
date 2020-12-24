@@ -18,7 +18,6 @@ const Link = styled.a`
 `;
 
 function chooseColor(pageName) {
-  console.log(pageName);
   if (pageName === 'Home') return 'skyblue';
   else if (pageName === 'Art') return 'red';
   else if (pageName === 'About Me') return 'orange';
