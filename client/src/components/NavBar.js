@@ -29,10 +29,12 @@ const NavTitle = styled.p`
 const StyledNavBarLink = styled(NavBarLink)``;
 
 function getPageTitle() {
-  const path = window.location.pathname;
-  if (path === '/') return 'SAM';
-  else if (path === '/art') return 'Art';
-  else if (path === '/aboutme') return 'About Me';
+  if (typeof window !== 'undefined') {
+    const path = window.location.pathname;
+    if (path === '/') return 'SAM';
+    else if (path === '/art') return 'Art';
+    else if (path === '/aboutme') return 'About Me';
+  }
 }
 
 export default function NavBar() {
