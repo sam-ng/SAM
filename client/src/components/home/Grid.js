@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   width: 80%;
   display: grid;
   grid-template:
-    [row1-start] 'project project project' 200px [row1-end]
+    [row1-start] 'project project project' 300px [row1-end]
     / 1fr 1fr 1fr;
   gap: 50px 50px;
   justify-items: center;
@@ -18,9 +18,18 @@ const Wrapper = styled.div`
 export default function Grid() {
   return (
     <Wrapper>
-      <ProjectCard projectName="Stony Schedule Builder/Viewer"></ProjectCard>
-      <ProjectCard projectName='"What Makes People in a Country Happy?"'></ProjectCard>
-      <ProjectCard projectName="Dynamic Memory Allocator"></ProjectCard>
+      <ProjectCard
+        projectName="Stony Schedule Builder/Viewer"
+        href="https://github.com/VIP-Tech-Business-in-Development/Schedule-Viewer"
+      ></ProjectCard>
+      <ProjectCard
+        projectName='"What Makes People in a Country Happy?"'
+        href="https://github.com/sam-ng/CSE351_FinalProject"
+      ></ProjectCard>
+      <ProjectCard
+        projectName="Dynamic Memory Allocator"
+        href="https://github.com/sam-ng/Dynamic-Memory-Allocator"
+      ></ProjectCard>
     </Wrapper>
   );
 }
