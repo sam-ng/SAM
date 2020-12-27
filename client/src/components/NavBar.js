@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import NavBarLink from './NavBarLink';
 import backgroundImage from '../images/yourNameSky.jpg';
@@ -28,22 +28,33 @@ const NavTitle = styled.p`
 
 const StyledNavBarLink = styled(NavBarLink)``;
 
-function getPageTitle() {
+/*function getPageTitle() {
   if (typeof window !== 'undefined') {
     const path = window.location.pathname;
     if (path === '/') return 'SAM';
     else if (path === '/art') return 'Art';
     else if (path === '/aboutme') return 'About Me';
   }
-}
+}*/
 
 export default function NavBar() {
+  const [pageTitle, setPageTitle] = useState('');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const path = window.location.pathname;
+      if (path === '/') setPageTitle('SAM');
+      else if (path === '/art/') setPageTitle('Art');
+      else if (path === '/aboutme/') setPageTitle('About Me');
+    }
+  }, []);
+
   return (
     <Wrapper>
-      <NavTitle>{getPageTitle()}</NavTitle>
+      <NavTitle>{pageTitle}</NavTitle>
       <StyledNavBarLink pageName="Home" href="/"></StyledNavBarLink>
-      <StyledNavBarLink pageName="Art" href="/art"></StyledNavBarLink>
-      <StyledNavBarLink pageName="About Me" href="/aboutme"></StyledNavBarLink>
+      <StyledNavBarLink pageName="Art" href="/art/"></StyledNavBarLink>
+      <StyledNavBarLink pageName="About Me" href="/aboutme/"></StyledNavBarLink>
     </Wrapper>
   );
 }
