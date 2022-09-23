@@ -11,6 +11,6 @@ export default function Home() {
     //   <Header></Header>
     //   <Body></Body>
     // </Wrapper>
-    <></>
+    <div className="font-Raleway text-lg">Hello</div>
   );
 }
