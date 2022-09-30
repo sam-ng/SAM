@@ -6,8 +6,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      width: {
-        'ch-20': '20ch',
+      maxHeight: {
+        '1/3': '33%',
       },
       fontFamily: {
         Raleway: ['Raleway', 'sans-serif'],

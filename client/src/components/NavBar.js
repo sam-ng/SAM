@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'gatsby';
+
 import NavBarLink from './NavBarLink';
 import backgroundImage from '../images/yourNameSky.jpg';
 
@@ -49,9 +51,11 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className="bg-slate-700 px-10 py-6 flex flex-row justify-between items-center">
+    <div className="bg-slate-700 px-10 py-4 flex flex-row justify-between items-center">
       <div className="ml-32">
-        <h1 className="text-white text-5xl font-thin">SAM</h1>
+        <h1 className="text-white text-5xl font-thin">
+          <Link to="/">SAM</Link>
+        </h1>
       </div>
       <div className="mr-32 h-100 flex flex-row justify-end items-center">
         <NavBarLink pageName="Home" path="/"></NavBarLink>
