@@ -49,12 +49,15 @@ export default function NavBar() {
   }, []);
 
   return (
-    // <Wrapper>
-    //   <NavTitle>{pageTitle}</NavTitle>
-    //   <StyledNavBarLink pageName="Home" href="/"></StyledNavBarLink>
-    //   <StyledNavBarLink pageName="Art" href="/art/"></StyledNavBarLink>
-    //   <StyledNavBarLink pageName="About Me" href="/aboutme/"></StyledNavBarLink>
-    // </Wrapper>
-    <></>
+    <div className="bg-slate-700 px-10 py-6 flex flex-row justify-between items-center">
+      <div className="ml-32">
+        <h1 className="text-white text-5xl font-thin">SAM</h1>
+      </div>
+      <div className="mr-32 h-100 flex flex-row justify-end items-center">
+        <NavBarLink pageName="Home" path="/"></NavBarLink>
+        <NavBarLink pageName="Art" path="/art"></NavBarLink>
+        <NavBarLink pageName="About Me" path="/about"></NavBarLink>
+      </div>
+    </div>
   );
 }

@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        'ch-20': '20ch',
+      },
       fontFamily: {
         Raleway: ['Raleway', 'sans-serif'],
       },

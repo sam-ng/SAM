@@ -17,16 +17,15 @@ import { Link } from 'gatsby';
 //   }
 // `;
 
-function chooseColor(pageName) {
-  if (pageName === 'Home') return 'skyblue';
-  else if (pageName === 'Art') return 'red';
-  else if (pageName === 'About Me') return 'orange';
-}
-
-export default function NavBarLink({ pageName, href }) {
+export default function NavBarLink({ pageName, path }) {
   return (
-    <Link className="" to={href}>
-      {pageName}
-    </Link>
+    <div className="h-100 mx-4 px-4 ">
+      <Link
+        className="text-white font-Raleway text-lg font-bold text-center p-2 hover:text-sky-300"
+        to={path}
+      >
+        {pageName}
+      </Link>
+    </div>
   );
 }
