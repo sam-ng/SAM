@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from '../components/Header';
-import Seo from '../components/SEO';
+import Seo from '../components/Seo';
 
 const AboutMe = () => {
   return (
