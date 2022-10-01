@@ -11,7 +11,7 @@ const Socials = () => {
         icon={<FaLinkedinIn />}
       />
       <SocialLink href="https://github.com/sam-ng" icon={<FaGithub />} />
-      <SocialLink href="" icon={<FaEnvelope />} />
+      <SocialLink href="mailto:ngsamu4@gmail.com" icon={<FaEnvelope />} />
     </section>
   );
 };

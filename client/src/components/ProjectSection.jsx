@@ -1,31 +1,29 @@
 import React from 'react';
-
-import yourNameSky from '../images/yourNameSky.jpg';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import ProjectCard from './ProjectCard';
 
-const ProjectSection = () => {
+const ProjectSection = ({ data }) => {
   return (
     <section className="mt-10">
       <h2 className="text-2xl font-Raleway font-semibold my-2">
         Featured Projects
       </h2>
-      <div className="mt-4">
-        <ProjectCard
-          href="https://github.com/sam-ng/Downcloud"
-          image={yourNameSky}
-          alt="Downcloud"
-          title="Downcloud"
-          description="Collaborative text editor, perfect for putting ideas down together."
-          tags={[
-            'ShareDB',
-            'Elasticsearch',
-            'Node.js',
-            'Express.js',
-            'EJS',
-            'MongoDB',
-          ]}
-        />
+      <div className="mt-4 flex flex-row flex-wrap">
+        {data.allMdx.nodes.map(({ frontmatter, id }) => {
+          const { name, description, link, image, tags } = frontmatter;
+          return (
+            <ProjectCard
+              href={link}
+              image={image}
+              alt={name}
+              title={name}
+              description={description}
+              tags={tags}
+              key={id}
+            />
+          );
+        })}
       </div>
     </section>
   );

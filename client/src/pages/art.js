@@ -1,5 +1,7 @@
 import React from 'react';
+
 import Header from '../components/Header';
+import Seo from '../components/SEO';
 
 export default function AboutMe() {
   return (
@@ -8,3 +10,5 @@ export default function AboutMe() {
     </div>
   );
 }
+
+export const Head = () => <Seo title="Art | Samuel Ng" />;

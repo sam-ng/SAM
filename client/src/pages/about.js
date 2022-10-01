@@ -1,5 +1,7 @@
 import React from 'react';
+
 import Header from '../components/Header';
+import Seo from '../components/SEO';
 
 const AboutMe = () => {
   return (
@@ -14,10 +16,6 @@ const AboutMe = () => {
   );
 };
 
-export const Head = () => (
-  <>
-    <title>About Me</title>
-    <meta name="description" content="Page describing me." />
-  </>
-);
+export const Head = () => <Seo title="About Me | Samuel Ng" />;
+
 export default AboutMe;
