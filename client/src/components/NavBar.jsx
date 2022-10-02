@@ -14,6 +14,7 @@ const NavBar = () => {
         </h1>
       </div>
       <div className="mr-32 h-100 flex flex-row justify-end items-center">
+        <NavBarLink pageName="Home" path="/"></NavBarLink>
         <NavBarLink pageName="Art" path="/art"></NavBarLink>
         {/* <NavBarLink pageName="About Me" path="/about"></NavBarLink> */}
       </div>
