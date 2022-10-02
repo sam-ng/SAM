@@ -6,7 +6,6 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 
 const Art = ({ data }) => {
-  console.log(data);
   return (
     <Layout>
       <section className="flex flex-col justify-center items-center mt-10 w-1/2">
@@ -16,13 +15,12 @@ const Art = ({ data }) => {
           years.
         </p>
       </section>
-      <section className="mt-4 flex flex-row flex-wrap">
+      <section className="mt-4 flex flex-row flex-wrap justify-center">
         {data.allMdx.nodes.map(({ frontmatter, id }) => {
           const { name, description, image } = frontmatter;
-          console.log(image);
           return (
             <div
-              className="mr-4 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 hover:ease-in-out duration-300"
+              className="mr-4 mb-4 max-w-lg rounded overflow-hidden shadow-lg hover:scale-105 hover:ease-in-out duration-300"
               key={id}
             >
               <GatsbyImage

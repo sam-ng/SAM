@@ -1,5 +1,4 @@
 import React from 'react';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import ProjectCard from './ProjectCard';
 
@@ -9,9 +8,8 @@ const ProjectSection = ({ data }) => {
       <h2 className="text-2xl font-Raleway font-semibold my-2">
         Featured Projects
       </h2>
-      <div className="mt-4 flex flex-row flex-wrap">
+      <div className="mt-4 flex flex-row flex-wrap justify-center">
         {data.allMdx.nodes.map(({ frontmatter, id }) => {
-          console.log(id);
           const { name, description, link, image, tags } = frontmatter;
           return (
             <ProjectCard

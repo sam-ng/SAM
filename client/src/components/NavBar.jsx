@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 
 import NavBarLink from './NavBarLink';
@@ -15,7 +15,7 @@ const NavBar = () => {
       </div>
       <div className="mr-32 h-100 flex flex-row justify-end items-center">
         <NavBarLink pageName="Art" path="/art"></NavBarLink>
-        <NavBarLink pageName="About Me" path="/about"></NavBarLink>
+        {/* <NavBarLink pageName="About Me" path="/about"></NavBarLink> */}
       </div>
     </div>
   );

@@ -3,10 +3,10 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const ProjectCard = ({ href, image, alt, title, description, tags }) => {
   return (
-    <div className="mr-4 max-w-sm rounded overflow-hidden shadow-lg hover:scale-105 hover:ease-in-out duration-300">
+    <div className="mr-4 mb-4 max-w-md rounded overflow-hidden shadow-lg hover:scale-105 hover:ease-in-out duration-300">
       <a className="w-full h-full" href={href}>
         <GatsbyImage
-          className="w-full max-h-1/3"
+          className="w-full max-h-1/2 object-scale-down"
           image={getImage(image)}
           alt={alt}
         />
