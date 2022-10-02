@@ -1,10 +1,2 @@
 # SAM
-TODO:
-<ul>
-  <li>Logo</li>
-  <li>Sections</li>
-  <li>Images for Project Cards</li>
-  <li>Footer</li>
-  <li>Art</li>
-  <li>About Me Description</li>
-</ul>
+Welcome to my personal site! I plan on dropping random things I find interesting as well as some of my best works here. Feel free to look around!
