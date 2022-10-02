@@ -11,6 +11,7 @@ const ProjectSection = ({ data }) => {
       </h2>
       <div className="mt-4 flex flex-row flex-wrap">
         {data.allMdx.nodes.map(({ frontmatter, id }) => {
+          console.log(id);
           const { name, description, link, image, tags } = frontmatter;
           return (
             <ProjectCard

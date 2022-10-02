@@ -12,6 +12,12 @@ module.exports = {
     siteUrl: `https://sam-ng.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: 'src/images/favicon.png', // This path is relative to the root of the site.
+      },
+    },
     'gatsby-plugin-postcss',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
@@ -19,8 +25,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: `projects`,
-        path: `${__dirname}/data/projects`,
+        name: `data`,
+        path: `${__dirname}/data`,
       },
     },
     'gatsby-plugin-mdx',

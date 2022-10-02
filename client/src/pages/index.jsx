@@ -7,7 +7,7 @@ import AboutSnippet from '../components/AboutSnippet';
 import Socials from '../components/Socials';
 import ProjectSection from '../components/ProjectSection';
 
-export default function Home({ data }) {
+const Home = ({ data }) => {
   return (
     <Layout>
       <AboutSnippet />
@@ -15,23 +15,25 @@ export default function Home({ data }) {
       <ProjectSection data={data} />
     </Layout>
   );
-}
+};
 
 export const projectsQuery = graphql`
   query {
-    allMdx(sort: { order: ASC, fields: frontmatter___order }) {
+    allMdx(
+      filter: { internal: { contentFilePath: { regex: "//projects//" } } }
+      sort: { order: ASC, fields: frontmatter___order }
+    ) {
       nodes {
         frontmatter {
           name
-          order
           description
-          link
-          tags
           image {
             childImageSharp {
               gatsbyImageData
             }
           }
+          link
+          tags
         }
         id
       }
@@ -40,3 +42,5 @@ export const projectsQuery = graphql`
 `;
 
 export const Head = () => <Seo title="Samuel Ng" />;
+
+export default Home;
