@@ -9,7 +9,7 @@ const Art = ({ data }) => {
   return (
     <Layout>
       <section className="flex flex-col justify-center items-center mt-10 w-1/2">
-        <h2 className="text-5xl font-bold font-Raleway">Art.</h2>
+        <h2 className="text-5xl font-bold font-Raleway">Art</h2>
         <p className="mt-5 text-xl text-center leading-loose font-Raleway">
           Here is home to some of my favorite pieces of art I've done over the
           years.
