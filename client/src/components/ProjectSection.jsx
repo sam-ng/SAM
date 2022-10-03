@@ -4,11 +4,11 @@ import ProjectCard from './ProjectCard';
 
 const ProjectSection = ({ data }) => {
   return (
-    <section className="mt-10">
+    <section className="mt-10 flex flex-col justify-center">
       <h2 className="text-2xl font-Raleway font-semibold my-2">
         Featured Projects
       </h2>
-      <div className="mt-4 flex flex-row flex-wrap justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
         {data.allMdx.nodes.map(({ frontmatter, id }) => {
           const { name, description, link, image, tags } = frontmatter;
           return (
