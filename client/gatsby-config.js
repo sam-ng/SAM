@@ -31,5 +31,6 @@ module.exports = {
     },
     'gatsby-plugin-mdx',
     `gatsby-plugin-gatsby-cloud`,
+    'gatsby-plugin-netlify',
   ],
 };
