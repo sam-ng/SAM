@@ -45,7 +45,7 @@ const Art = ({ data }) => {
 export const artQuery = graphql`
   query {
     allMdx(
-      filter: { internal: { contentFilePath: { regex: "//art//" } } }
+      filter: { internal: { contentFilePath: { regex: "/data/art//" } } }
       sort: { order: ASC, fields: frontmatter___order }
     ) {
       nodes {

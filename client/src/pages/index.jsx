@@ -20,7 +20,7 @@ const Home = ({ data }) => {
 export const projectsQuery = graphql`
   query {
     allMdx(
-      filter: { internal: { contentFilePath: { regex: "//projects//" } } }
+      filter: { internal: { contentFilePath: { regex: "/data/projects//" } } }
       sort: { order: ASC, fields: frontmatter___order }
     ) {
       nodes {
